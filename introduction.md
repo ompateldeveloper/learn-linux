@@ -2,11 +2,13 @@
 - touch
 - ls
 - ls -l :
-- ls -i :inode
 - ls -ll
 - ls *f
 - ls f*
 - ls regex
 - chmod <permission> <filename>  `421-rwx-addition allowed, permission format : <user,group,others>`
 - ln file filelink : link command
+- ls -i :inode
+- cp file filecopy : copied in different address
+- wc : word count flags: -l, -w, -c .
 - 
