@@ -9,7 +9,10 @@ echo "hello world"
 ```
 # variable declerations in shell has no spaces near = , space freaks keepout!
 v_num=0
-v_name=(()) ## you can store other values like result of function and stuff its like {} in react 
+v_name="hello"
+## you can store other values like result of function and stuff its like {} in react
+v_name_string='heyo' #takes it 
+
 ```
 - conditionals in shell:
 ```
