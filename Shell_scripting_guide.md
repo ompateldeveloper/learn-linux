@@ -5,6 +5,12 @@ Used to write scripts which helps in automation of any mundane tasks in applicat
 ```
 echo "hello world"
 ```
+- Variables in shell:
+```
+# variable declerations in shell has no spaces near = , space freaks keepout!
+v_num=0
+v_name=(()) ## you can store other values like result of function and stuff its like {} in react 
+```
 - conditionals in shell:
 ```
 if [ a=a ] then
