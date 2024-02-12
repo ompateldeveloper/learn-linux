@@ -10,10 +10,11 @@ echo "hello world"
 # variable declerations in shell has no spaces near = , space freaks keepout!
 v_num=0
 v_name="hello"
-## you can store other values like result of function and stuff its like {} in react
-v_name_string='heyo' #takes it 
+# you can store other values like result of function and stuff its like {} in react
+v_name_string='heyo' #takes it as alphaneumeric string i.e. you can't put variables in between them
 
 ```
+`Note : in shell " is template string and ' is alphaneumeriuc string`
 - conditionals in shell:
 ```
 if [ a=a ] then
