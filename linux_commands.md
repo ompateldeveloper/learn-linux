@@ -3,6 +3,12 @@
 ```
 touch index.js
 ```
+- cat : It it used to create a file, see content to file, append to present file, replace content of file, but it cannot edit wi=ritten content
+```
+cat > new.txt # craetes new file and can append to it 
+cat new.txt # shows content of file
+cat >> new.txt # appends to file
+```
 - pwd : shows present working directory
 ```
 pwd
