@@ -109,3 +109,4 @@ we can use -o to redirect the sorted output to another file
 ```
 sort -o file.txt sortedfile.txt
 ```
+- ps : it  is used to see running proccesses
