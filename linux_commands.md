@@ -111,7 +111,22 @@ sort -o file.txt sortedfile.txt
 ```
 
 - ps : it  is used to see running proccesses
-
+- useradd :  used to add user into the system
+  ```
+  sudo useradd demo
+  ```
+  after this we use passwd command to set password
+  ```
+  sudo passwd demo # it'll prompt for password 
+  ```
+- groupadd : used to create a group
+  ```
+  sudo groupadd groupname
+  ```
+- id :  to get information about current user
+  ```
+  id
+  ```
 - find : Very useful command to find among directories and even perform operations on it
   
 ```
