@@ -132,6 +132,7 @@ for flags (options) we have so many things:
     ```
   - size : find by size
     ```
+    - size +1M 
     ```
   - logical : we can use logical operators juch as -a (AND), -o (OR) ! (NOT).
   - mtime : modified withing last days
@@ -147,9 +148,9 @@ for flags (options) we have so many things:
     ```
   - exec : executes provided command for each found file
     ```
-    -exec wc -l {} \
+    -exec wc -l {} \;
     ```
-    `here {} is replaces by filename and \ represents end of exec `
+    `here {} is replaces by filename and \; represents end of exec `
   - 
   - user : finds by username
     ```
@@ -167,7 +168,8 @@ for flags (options) we have so many things:
     ```
     -printf "%P\n"
     ```
-  - using along with wc -l : this si special scenario where we can calculate no of found results
+  - using along with wc -l : this is special scenario where we can calculate no of found results
     ```
     find /path/to/start -type f | wc -l
     ```
+    
