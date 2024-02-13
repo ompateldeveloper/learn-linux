@@ -109,4 +109,65 @@ we can use -o to redirect the sorted output to another file
 ```
 sort -o file.txt sortedfile.txt
 ```
+
 - ps : it  is used to see running proccesses
+
+- find : Very useful command to find among directories and even perform operations on it
+  
+```
+#find [path/to] [flags] [expression]
+find ./ -name "filename.txt"
+```
+for flags (options) we have so many things:
+  - name : we can find by name , can use a bit of regex as well .
+    ```
+    find ./ -name "filename.txt"
+    find ./ -name "f*" #files starting with f
+    find ./ -name "*.js" # files ending with .js
+    ```
+  - type: we can specify type as f or d.
+    ```
+    -type f
+    -type d
+    ```
+  - size : find by size
+    ```
+    ```
+  - logical : we can use logical operators juch as -a (AND), -o (OR) ! (NOT).
+  - mtime : modified withing last days
+    ```
+    -mtime -1
+    ```
+  - iname : finds by name but ignores cases
+  - empty : finds empty files
+  - delete : deletes found files
+  - perm : finds with specified permission.
+    ```
+    -perm 770
+    ```
+  - exec : executes provided command for each found file
+    ```
+    -exec wc -l {} \
+    ```
+    `here {} is replaces by filename and \ represents end of exec `
+  - 
+  - user : finds by username
+    ```
+    -user omp
+    ```
+  - group : finds by group name
+    ```
+    -group group1
+    ```
+  - maxdepth : specifies depth to be searched
+    ```
+    -maxdepth 3
+    ```
+  - printf : prints on console
+    ```
+    -printf "%P\n"
+    ```
+  - using along with wc -l : this si special scenario where we can calculate no of found results
+    ```
+    find /path/to/start -type f | wc -l
+    ```
