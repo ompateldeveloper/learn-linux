@@ -25,6 +25,29 @@ else
   #else block
 fi #closing if
 ```
+cases are present in shell
+```
+echo "Do you agree? (yes/no/maybe/maybe not):"
+read choice
+
+case $choice in
+    "yes" |"y")
+        echo "You agreed."
+        ;;
+    "no" | "n")
+        echo "You disagreed."
+        ;;
+    "maybe")
+        echo "You are unsure."
+        ;;
+    "maybe not")
+        echo "You are not sure at all."
+        ;;
+    *)
+        echo "Invalid choice."
+        ;;
+esac
+```
 - for loop in shell
 ```
 # from range 1 to 5
